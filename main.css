@@ -1,1 +1,44 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 20px 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__items {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__items .header__subtitle {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+.header .header__items .header__subtitle p {
+  font-size: 60px;
+}
+.header .header__items .line-item {
+  width: 3px;
+  height: 45px;
+  background-color: black;
+}
+.header .header__items p {
+  width: 150px;
+}
+.header .header__item {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
