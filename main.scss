@@ -1,43 +1,47 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-.container{
-    padding:20px 50px;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .header__items{
-        width: 450px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        .header__subtitle{
-            display: flex;
-            align-items: center;
-            font-size: 40px;
-            p{
-                font-size: 60px;
+@import "./sass/variables/variables";
+@import "./sass/mixin/allmixins";
+@import "./sass/all blocks/allblocks";
+
+.card-section{
+    padding: 0 40px;
+    .card-section__items{
+        position: relative;
+        text-align: center;
+        .card-items__title{
+            text-align: left;
+            height: 450px;
+            @include flex-column;
+        }
+        .card-items__image-card{
+            position: absolute;
+            top: 80px;
+            right: 250px;
+            .image-card__img{
+                width: 530px;
+                filter: grayscale(100%);
+                box-shadow: 50px -50px 0 #DBDBDB;
             }
         }
-        .line-item{
-            width: 3px;
-            height: 45px;
-            background-color: black;
+        .card-items__scroll{
+            position: absolute;
+            top: 0;
+            right: 40px;
+            @include flex-column;
+            .scroll__black-line{
+                width: 2px;
+                height: 100px;
+                background-color: black;
+            }
+            .scroll__gray-line{
+                width: 2px;
+                height: 300px;
+                background-color: #d3d3d3;
+            }
+            .bi-search{
+                padding: 20px 0;
+                margin-left: -10px;
+                font-size: 30px;
+            }
         }
-        p{
-            width: 150px;
-        }
-    }
-    .header__item{
-        width: 120px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 }

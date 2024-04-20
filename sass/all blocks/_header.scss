@@ -1,0 +1,32 @@
+.header{
+    padding: 0 40px;
+    .header__block{
+        @include flex-between;
+        .block__items{
+            width: 400px;
+            @include flex-between;
+            .items__subtitle{
+                font-size: 40px;
+                @include flex-between;
+                p{
+                    font-size: 60px;
+                }
+            
+            }
+            p{
+                font-size: 20px;
+            }
+            .block__line-item{
+                width: 3px;
+                height: 45px;
+                margin: 0 30px;
+                background-color: black;
+            }
+        }
+        .block__item{
+            width: 150px;
+            @include flex-between;
+            font-size: 20px;
+        }
+    }
+}

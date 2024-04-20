@@ -5,40 +5,94 @@ body {
   font-family: sans-serif;
 }
 
-.container {
-  padding: 20px 50px;
-}
-
 .header {
+  padding: 0 40px;
+}
+.header .header__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .header__items {
-  width: 450px;
+.header .header__block .block__items {
+  width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .header__items .header__subtitle {
-  display: flex;
-  align-items: center;
+.header .header__block .block__items .items__subtitle {
   font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header .header__items .header__subtitle p {
+.header .header__block .block__items .items__subtitle p {
   font-size: 60px;
 }
-.header .header__items .line-item {
+.header .header__block .block__items p {
+  font-size: 20px;
+}
+.header .header__block .block__items .block__line-item {
   width: 3px;
   height: 45px;
+  margin: 0 30px;
   background-color: black;
 }
-.header .header__items p {
+.header .header__block .block__item {
   width: 150px;
-}
-.header .header__item {
-  width: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 20px;
+}
+
+.container {
+  padding: 0 50px;
+}
+
+.card-section {
+  padding: 0 40px;
+}
+.card-section .card-section__items {
+  position: relative;
+  text-align: center;
+}
+.card-section .card-section__items .card-items__title {
+  text-align: left;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card-section .card-section__items .card-items__image-card {
+  position: absolute;
+  top: 80px;
+  right: 250px;
+}
+.card-section .card-section__items .card-items__image-card .image-card__img {
+  width: 530px;
+  filter: grayscale(100%);
+  box-shadow: 50px -50px 0 #DBDBDB;
+}
+.card-section .card-section__items .card-items__scroll {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card-section .card-section__items .card-items__scroll .scroll__black-line {
+  width: 2px;
+  height: 100px;
+  background-color: black;
+}
+.card-section .card-section__items .card-items__scroll .scroll__gray-line {
+  width: 2px;
+  height: 300px;
+  background-color: #d3d3d3;
+}
+.card-section .card-section__items .card-items__scroll .bi-search {
+  padding: 20px 0;
+  margin-left: -10px;
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */
