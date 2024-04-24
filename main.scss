@@ -11,6 +11,11 @@
             text-align: left;
             height: 450px;
             @include flex-column;
+            .title__icons{
+                i{
+                    padding: 0 20px 0 0;
+                }
+            }
         }
         .card-items__image-card{
             position: absolute;

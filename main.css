@@ -63,6 +63,9 @@ body {
   justify-content: space-between;
   flex-direction: column;
 }
+.card-section .card-section__items .card-items__title .title__icons i {
+  padding: 0 20px 0 0;
+}
 .card-section .card-section__items .card-items__image-card {
   position: absolute;
   top: 80px;
